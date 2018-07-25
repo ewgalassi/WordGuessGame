@@ -1,0 +1,118 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-image: url("../images/ocean-background.png");
+    background-size: 100%;
+    z-index: 1;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+
+    padding: 10px;
+    border: 1px solid rgb(5, 76, 231);
+    background-color: rgb(2, 161, 253);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+
+}
+
+.hanger {
+    visibility: hidden;
+}
+
+#current-word {
+    letter-spacing: 0.2em;
+}
+
+h4 {
+    height: 20px;
+    margin: 10px;
+    font-size: 20px;
+    letter-spacing: 1em;
+}
+
+.counter {
+    float: left;
+    margin-left: 20px;
+}
+
+#theme {
+    float: right;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 10%;
+    letter-spacing: 0.1em;
+    font-size: 36px;
+    line-height: 1.5em;
+}
+
+#gallows {
+    height: 250px;
+    width: 250px;
+    background-image: url("../images/gallows.jpg");
+    background-position: 65% 50%;
+    background-size: 200%;
+    margin: 0 auto;
+    justify-items: center;
+    z-index: 2;
+}
+
+#head {
+    height: 50px;
+    position: relative;
+    left: 7%;
+    top: 80px;
+    z-index: 6;
+}
+
+#his-body {
+    height: 50px;
+    position: relative;
+    left: 8%;
+    top: 65px;
+    z-index: 3;
+}
+
+#right-arm {
+    height: 50px;
+    position: relative;
+    left: 10%;
+    top: 70px;
+    z-index: 4;
+}
+
+#left-arm {
+    height: 50px;
+    position: relative;
+    left: 6%;
+    top: 70px;
+    z-index: 4;
+}
+
+#right-leg {
+    height: 50px;
+    position: relative;
+    left: 8%;
+    top: 65px;
+    z-index: 4;
+}
+
+#left-leg {
+    height: 50px;
+    position: relative;
+    left: 8%;
+    top: 65px;
+    z-index: 4;
+}

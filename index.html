@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Word Guess Game</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <h1>Word Guess Game! (AKA Hangman)</h1>
+        <br>
+        <h2 id="press-key">Press any key to get started!</h2>
+        <br>
+        <div class="counter">
+            <h3>Guesses remaining: <span id="guesses-left">6</span></h3>
+            <br>
+            <h3>Win count: <span id="win-count">0</span></h3>
+            <br>
+            <h3>Loss count: <span id="loss-count">0</span></h3>
+        </div>
+        <div>
+            <h2 id="theme">Theme:<br>Sea animals!</h2>
+        </div>
+        <div id="gallows">
+            <div>
+                <img class="hanger" id="head" src="assets/images/head.png" alt="head">
+            </div>
+            <div>
+                <img class="hanger" id="right-arm" src="assets/images/right-arm.png" alt="right arm">
+                <img class="hanger" id="his-body" src="assets/images/his-body.png" alt="body">
+                <img class="hanger" id="left-arm" src="assets/images/left-arm.png" alt="left arm">
+            </div>
+            <div>
+                <img class="hanger" id="right-leg" src="assets/images/right-leg.png" alt="right leg">
+                <img class="hanger" id="left-leg" src="assets/images/left-leg.png" alt="left leg">
+            </div>
+        </div>
+        <br>
+        <h2>Current word: 
+            <br>
+            <span id="current-word"></span>
+        </h2>
+        <br>
+        <h3>Letters guessed this game: </h3>
+        <h4 id="old-guesses"></h4>
+        <br>
+        
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
