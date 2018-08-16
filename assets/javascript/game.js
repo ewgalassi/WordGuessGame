@@ -27,29 +27,29 @@ function newGame() {
     console.log(computerChoice);
 
     blankWord = [];
-        
-        for (i = 0; i < computerChoice.length; i++) {
-            if (computerChoice[i] === " ") {
-                blankWord.push("&nbsp");
-            } else {
-                blankWord.push("_");
-            };
+
+    for (i = 0; i < computerChoice.length; i++) {
+        if (computerChoice[i] === " ") {
+            blankWord.push("&nbsp");
+        } else {
+            blankWord.push("_");
         };
-        
-        document.getElementById("current-word").innerHTML = blankWord.join("");
-        oldGuesses = [];
-        document.getElementById("old-guesses").textContent = oldGuesses.join("");
-        guessesLeft = 6;
-        document.getElementById("guesses-left").textContent = guessesLeft;
-        document.getElementById("head").style.visibility = "hidden";
-        document.getElementById("right-arm").style.visibility = "hidden";
-        document.getElementById("left-arm").style.visibility = "hidden";
-        document.getElementById("his-body").style.visibility = "hidden";
-        document.getElementById("right-leg").style.visibility = "hidden";
-        document.getElementById("left-leg").style.visibility = "hidden";
+    };
+
+    document.getElementById("current-word").innerHTML = blankWord.join("");
+    oldGuesses = [];
+    document.getElementById("old-guesses").textContent = oldGuesses.join("");
+    guessesLeft = 6;
+    document.getElementById("guesses-left").textContent = guessesLeft;
+    document.getElementById("head").style.visibility = "hidden";
+    document.getElementById("right-arm").style.visibility = "hidden";
+    document.getElementById("left-arm").style.visibility = "hidden";
+    document.getElementById("his-body").style.visibility = "hidden";
+    document.getElementById("right-leg").style.visibility = "hidden";
+    document.getElementById("left-leg").style.visibility = "hidden";
 }
 
-document.onkeyup = function(event) {
+document.onkeyup = function (event) {
 
     document.getElementById("press-key").style.visibility = "hidden";
 
@@ -59,7 +59,7 @@ document.onkeyup = function(event) {
         if (computerChoice[i] === userGuess) {
             blankWord.splice(i, 1, userGuess);
             document.getElementById("current-word").innerHTML = blankWord.join("");
-        } 
+        }
     }
 
     if (computerChoice.indexOf(userGuess) === -1) {
@@ -70,7 +70,7 @@ document.onkeyup = function(event) {
             document.getElementById("old-guesses").textContent = oldGuesses.join("");
         };
         if (guessesLeft === 5) {
-        document.getElementById("head").style.visibility = "visible";
+            document.getElementById("head").style.visibility = "visible";
         } else if (guessesLeft === 4) {
             document.getElementById("his-body").style.visibility = "visible";
         } else if (guessesLeft === 3) {
@@ -91,8 +91,8 @@ document.onkeyup = function(event) {
         document.getElementById("current-word").textContent = blankWord;
         alert("You lost!");
         setTimeout(newGame, 2000);
-    }   
-    
+    }
+
     if (blankWord.indexOf("_") === -1 && guessesLeft !== 0 && document.getElementById("left-leg").style.visibility !== "visible") {
         document.getElementById("win-count").textContent = winCount;
         winCount = winCount + 1;
@@ -101,5 +101,5 @@ document.onkeyup = function(event) {
     }
 
 
-    }
+}
 
